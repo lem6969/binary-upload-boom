@@ -9,3 +9,35 @@
     
 
 <%- include('partials/footer') -%>
+
+
+<!--
+The code you provided is an EJS (Embedded JavaScript) template code. It includes partials for the header and footer and displays a login and signup buttons in a row.
+
+Here's a breakdown of the code:
+
+ejs
+
+<%- include('partials/header') -%>
+
+This line includes the contents of the partials/header.ejs file. The - character after the opening tag (<%-) and before the closing tag (-%>) removes any whitespace that may be generated during the inclusion.
+
+ejs
+
+<main class="container">
+    <div class="row justify-content-around mt-5">
+        <a href="/login" class="col-3 btn btn-primary"> Login</a>
+        <a href="/signup" class="col-3 btn btn-primary"> Signup</a>
+    </div>
+</main>
+
+This section represents the main content of the page. It uses Bootstrap classes to create a responsive layout with a container. Inside the container, there is a row with justify-content-around class, which centers the buttons horizontally and adds spacing between them. The buttons are created using anchor tags (<a>) with the respective URLs for login and signup. They have the classes col-3 (occupying 3 columns in the row), btn (button styling), and btn-primary (primary button color).
+
+ejs
+
+<%- include('partials/footer') -%>
+
+This line includes the contents of the partials/footer.ejs file, similar to the header inclusion.
+
+Overall, this code structure allows you to reuse the header and footer across multiple pages and display login and signup buttons in a responsive row.
+-->

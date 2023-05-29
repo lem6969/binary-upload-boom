@@ -14,37 +14,3 @@
   </div>  
 <%- include('partials/footer') -%>
 
-
-<!--The code you provided is an EJS (Embedded JavaScript) template code. It includes partials for the header and footer and displays a list of posts with their images.
-
-Here's a breakdown of the code:
-
-ejs
-
-<%- include('partials/header') -%>
-
-This line includes the contents of the partials/header.ejs file. The - character after the opening tag (<%-) and before the closing tag (-%>) removes any whitespace that may be generated during the inclusion.
-
-ejs code
-<div class="container">
-  <div class="row justify-content-center mt-5">
-    <ul class="row list-unstyled">
-      <% for(var i=0; i<posts.length; i++) {%>
-        <li class="col-6 justify-content-between mt-5">
-          <a href="/post/<%= posts[i]._id%>">
-            <img class="img-fluid" src="<%= posts[i].image%>">
-          </a>
-        </li>
-      <% } %>
-    </ul>
-  </div>
-</div>
-
-This section represents the main content of the page. It uses Bootstrap classes to create a responsive layout with rows and columns. Inside the <ul> element, it iterates over the posts array and generates an <li> element for each post. The post's image is displayed within an anchor tag (<a>) that links to the individual post page. The image source (src) and the post ID (href) are populated dynamically using EJS tags (<%= %>).
-
-<%- include('partials/footer') -%>
-
-This line includes the contents of the partials/footer.ejs file, similar to the header inclusion.
-
-Overall, this code structure allows you to reuse the header and footer across multiple pages and dynamically display a list of posts with their images.
--->

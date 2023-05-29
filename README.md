@@ -8,9 +8,9 @@ https://quick-pound.onrender.com
 
 **Tech used:** EJS HTML, JavaScript, Node.js, Express, MongoDB, Mongoose, Multer, Passport.js
 
-This app allows users to make an account and upload posts with pictures, look at a feed of all user posts, comments on posts, and view user profiles. I used EJS to apply my HTML and Tailwind for the CSS to for the front-end. I used JS for some conditional features like allowing the original poster to delete their comments and/or posts. Node was used to craft the server and all information is stored on MongoDB. Passwords are hashed before storing. 
+This app allows users to make an account and upload posts with pictures, look at a feed of all user posts, comments on posts, and view user profiles. I used EJS to apply my HTML and Tailwind for the CSS to for the front-end. I used JS for some conditional features like allowing the original poster to delete their comments and/or posts. Node was used to craft the server and all information is stored on MongoDB. Passwords are hashed before storing i put comments in individual folders. 
 
-i put comments each in individual folders
+
 
 ## Optimizations
 
@@ -40,4 +40,4 @@ This projects really helped me solidify my skills in MVC and crafting a full-sta
 
 # Run
 
-`npm start`
+`npm start` || `npm run start`

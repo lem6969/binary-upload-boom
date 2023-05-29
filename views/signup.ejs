@@ -38,41 +38,6 @@
 
 <%- include('partials/footer') -%>
 
-<!--
-The code you provided is an EJS (Embedded JavaScript) template code for displaying a signup form. It includes partials for the header and footer and contains form elements for user registration.
-
-Here's a breakdown of the code:
-
-
-<%- include('partials/header') -%>
-
-This line includes the contents of the partials/header.ejs file. The - character after the opening tag (<%-) and before the closing tag (-%>) removes any whitespace that may be generated during the inclusion.
-
-
-This section represents the main content of the signup page. It uses Bootstrap classes to create a responsive layout with a container. Inside the container, there is a row with justify-content-center class, which centers the content horizontally.
-
-Within the row, there is a section with col-6 class, which occupies 6 columns of the grid. It contains a form for user registration. The form's action attribute is set to /signup and uses the POST method (method="POST") to submit the form data to the server for processing.
-
-The form includes several form elements:
-
-    User Name: <input type="text" class="form-control" id="userName" name="userName">
-    Email address: <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
-    Password: <input type="password" class="form-control" id="password" name="password">
-    Confirm Password: <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
-
-These form elements allow the user to enter their desired username, email address, password, and confirm password.
-
-Below the form, there are conditional blocks (<% if (...) { %> ... <% } %>) that check if there are any error or info messages passed to the template and display them accordingly. The error messages are displayed as danger alerts (<div class="alert alert-danger">) and the info messages as info alerts (<div class="alert alert-info">).
-
-ejs
-
-<%- include('partials/footer') -%>
-
-This line includes the contents of the partials/footer.ejs file, similar to the header inclusion.
-
-Overall, this code structure allows you to display a signup form with input fields for user registration, handle form submissions, and display error or info messages if present.
--->
-
 
 
 

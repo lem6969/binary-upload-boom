@@ -44,3 +44,37 @@
   </div>
 </div>
 <%- include('partials/footer') -%>
+
+
+
+<!--
+The code you provided is an EJS (Embedded JavaScript) template code for displaying the profile page. It includes partials for the header and footer and shows the user's profile information, allows them to add a new post, and displays existing posts.
+
+Here's a breakdown of the code:
+
+ejs
+
+<%- include('partials/header') -%>
+
+This line includes the contents of the partials/header.ejs file. The - character after the opening tag (<%-) and before the closing tag (-%>) removes any whitespace that may be generated during the inclusion.
+
+
+
+This section represents the main content of the profile page. It uses Bootstrap classes to create a responsive layout with a container. Inside the container, there is a row with mt-5 class, which adds top margin for spacing.
+
+The first column with col-6 class contains the user's profile information. It displays the user's username and email (<p><strong>User Name</strong>: <%= user.userName %></p>, <p><strong>Email</strong>: <%= user.email %></p>). It also includes a logout button that links to /logout (<a href="/logout" class="col-3 btn btn-primary">Logout</a>).
+
+Below the profile information, there is a section to add a new post. It includes a heading "Add a post" (<h2>Add a post</h2>) and a form to submit a new post. The form has input fields for title, caption, and image upload. The form's action attribute is set to /post/createPost and the enctype attribute is set to multipart/form-data to support file uploads. The form uses the POST method (method="POST") and has a submit button (<button type="submit" class="btn btn-primary" value="Upload">Submit</button>).
+
+The second column with col-6 class displays the existing posts. It contains an unordered list (<ul>) with row and list-unstyled classes. Inside the list, a for loop iterates over the posts array and generates list items (<li>) for each post. Each list item contains an image with a link to the post's details page (<a href="/post/<%= posts[i]._id%>"><img class="img-fluid" src="<%= posts[i].image%>"></a>).
+
+After displaying the posts, there is a row with justify-content-center class that contains a button to return to the feed page (<a class="btn btn-primary" href="/feed">Return to Feed</a>).
+
+ejs
+
+<%- include('partials/footer') -%>
+
+This line includes the contents of the partials/footer.ejs file, similar to the header inclusion.
+
+Overall, this code structure allows you to display the user's profile information, provide a form to add a new post, and display existing posts in a visually appealing manner.
+-->

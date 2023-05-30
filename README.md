@@ -1,9 +1,11 @@
 # quick_pound
 This is an application which mimics most of the features of one of the most popular social media apps: Instagram <br>
 <br>
-https://quick-pound.onrender.com
-
-
+`THE SITE LINK`
+https://quick-pound.onrender.com <br>
+<br>
+`THE WHITEBOARD`
+https://miro.com/app/board/uXjVMDu8e9Q=/?share_link_id=279869753777
 ## How It's Made:
 
 **Tech used:** EJS HTML, JavaScript, Node.js, Express, MongoDB, Mongoose, Multer, Passport.js
